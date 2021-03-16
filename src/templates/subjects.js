@@ -27,7 +27,7 @@ const ArticleIndex = ({ data, pageContext }) => {
       <SEO
         title={`All articles on the subject "${subject}"`}
         description="All articles filed under this subject."
-        image="/logo.png"
+        image="/logo.svg"
         pathname={`/subjects/${subject}`}
         // Boolean indicating whether this is an article:
         // article

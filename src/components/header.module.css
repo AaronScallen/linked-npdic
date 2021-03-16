@@ -1,18 +1,19 @@
 .masthead {
   padding: 1rem;
-  font-size: 84%;
+  font-size: 85%;
   font-family: var(--highlight-font);
   text-align: center;
-  background-color: white;
+  color: rgb(26, 221, 247);
+  background-color: black;
 }
 
 .site_logo {
-  margin: 1rem auto;
-  max-width: 6rem;
+  margin: 3rem auto;
+  max-width: 100%;
 }
 
 .masthead_info {
-  color: var(--rich-black);
+  color:  rgb(26, 221, 247);
 }
 
 .masthead_info a {

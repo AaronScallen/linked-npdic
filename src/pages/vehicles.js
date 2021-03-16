@@ -6,20 +6,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import style from "./about.module.css"
 
-const AboutPage = ({ data }) => {
+const VehiclesPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="About the Project"
-        description="Information about the site."
+        title="Department Fleet Vehicles"
+        description="Information about the NISD Police Departments Fleet of Vehicles."
         image="/logo.svg"
-        pathname="/about"
+        pathname="/vehicles"
         // Boolean indicating whether this is an article:
         // article
       />
       <section className={style.wrapper}>
         <Img fluid={data.headerImage.childImageSharp.fluid} alt="Robots" />
-        <h1 className={style.heading}>About this site</h1>
+        <h1 className={style.heading}>Department Vehicles</h1>
         <div>
           <figure className={style.image}>
             <Img
@@ -46,7 +46,7 @@ const AboutPage = ({ data }) => {
   )
 }
 
-export default AboutPage
+export default VehiclesPage
 
 export const query = graphql`
   {

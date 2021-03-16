@@ -6,28 +6,32 @@
 
 module.exports = {
   siteMetadata: {
-    title: `The Project`,
-    titleTemplate: `%s · a starting point`,
+    title: `InfoCore`,
+    titleTemplate: `%s · NISD Police Dept`,
     author: {
-      name: `Morten Rand-Hendriksen`,
-      summary: `a ballroom dancer playing at being a developer.`,
+      name: `A. Scallen`,
+      summary: `A supervisor who likes doing other things too`,
     },
-    description: `An opinionated starter for Gatsby`,
+    description: `A site built with His guidence`,
     url: `https://something.or.other`,
-    logo: `/logo.png`,
-    twitter: `mor10`,
+    logo: `/logo.svg`,
+    twitter: `NISDPoliceDept`,
     menuLinks: [
       {
         name: `Home`,
         link: `/`,
       },
       {
-        name: `Articles`,
+        name: `Pass Along`,
         link: `/articles`,
       },
       {
-        name: `About`,
+        name: `Staff`,
         link: `/about`,
+      },
+      {
+        name: `Dept Vehicles`,
+        link: `/vehicles`,
       },
       {
         name: `Events`,
@@ -48,6 +52,12 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/content/images/`,
       },
+    },
+    {
+      resolve: 'gatsby-source-multi-api',
+      options: {
+        apis: ['https://services.arcgis.com/g1fRTDLeMgspWrYp/arcgis/rest/services/SAMHD_DailySurveillance_Data_Public/FeatureServer/']
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

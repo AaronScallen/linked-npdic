@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-lil-learning-gatsby",
+  "name": "npd-info-system",
   "private": true,
-  "description": "An opinionated starter for Gatsby",
+  "description": "Built with His guidence",
   "version": "0.1.1",
-  "author": "Morten Rand-Hendriksen, LinkedIn Learning",
-  "license": "LinkedIn Learning Exercise Files License Agreement",
+  "author": "Aaron Scallen",
+  "license": "UNLICENSED",
   "dependencies": {
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.89",
@@ -19,6 +19,8 @@
     "gatsby-plugin-styled-components": "^3.3.14",
     "gatsby-remark-images": "^3.3.39",
     "gatsby-source-filesystem": "^2.3.37",
+    "gatsby-source-multi-api": "^1.0.5",
+    "gatsby-source-rest-api": "^0.2.3",
     "gatsby-transformer-remark": "^2.8.46",
     "gatsby-transformer-sharp": "^2.5.20",
     "gatsby-transformer-yaml": "^2.4.15",
@@ -31,9 +33,6 @@
   "devDependencies": {
     "prettier": "2.1.2"
   },
-  "keywords": [
-    "gatsby, linkedin learning, lil"
-  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -43,11 +42,5 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LinkedInLearning/learning-gatsby-2833047"
-  },
-  "bugs": {
-    "url": "https://github.com/LinkedInLearning/learning-gatsby-2833047/issues"
-  }
+  "main": "gatsby-browser.js"
 }

@@ -14,7 +14,7 @@ export default ({ data }) => {
       <SEO
         title={article.frontmatter.title}
         description={article.excerpt}
-        image="/logo.png"
+        image="/logo.svg"
         pathname={article.fields.slug}
         // Boolean indicating whether this is an article:
         article
